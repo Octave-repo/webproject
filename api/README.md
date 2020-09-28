@@ -16,14 +16,14 @@ Celle-ci permet un code plus clair et plus conscis.
 Il s'agit de l'annotation que l'on utlisera principalement.
 Elle regroupe :
 
-- @Setter/Getter
+- `@Setter/Getter`
   - Ces anotations génèrent un setter/getter pour le champs annoté.
     Dans le cas de @Data cela génère des setter/getter pour tout les champs.
-- @ToString
+- `@ToString`
   - Génère une redéfinition de `toString` comprenant le nom de la classe ansi que tout les champs, dans l'ordre, séparé par des virgules.
-- @EqualsAndHashCode
+- `@EqualsAndHashCode`
   - Génère une redéfinition de `equals` ansi qu'une redéfinition de `hashCode`. Par défaut la méthode utilise tout les champs qui ne sont pas statiques.
-- @RequiredArgsConstructor
+- `@RequiredArgsConstructor`
   - Génère une constructeur avec en paramètres tout les arguments corespondant aux champs de l'objet.
 
 ### @Getter/Setter
@@ -33,9 +33,9 @@ Elle regroupe :
 Si l'on utilise l'anotation @Data, un getter/setter public sera géneré pour chaque attributs.
 Cependant si l'on ne souhaite pas qu'un ou plusieurs getter/setter ne soit public ou même accesible, il est possible de mettre des restrictions sur certains de ces champs.
 
-- @Getter/Setter(AccessLevel.PRIVATE)
+- `@Getter/Setter(AccessLevel.PRIVATE)`
   - Le setter/getter en question sera privé.
-- @Getter/Setter(AccessLevel.PROTECTED)
+- `@Getter/Setter(AccessLevel.PROTECTED)`
   - Le setter/getter en question sera protegé
-- @Getter/Setter(AccessLevel.NONE)
+- `@Getter/Setter(AccessLevel.NONE)`
   - Le setter/getter en question ne sera pas accessible.
