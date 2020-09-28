@@ -5,6 +5,7 @@ import lombok.Data;
 import lombok.Getter;
 
 import javax.persistence.Entity;
+import javax.persistence.Id;
 
 /**
  * Classe pour la gestion d'un utilisateur
@@ -17,6 +18,7 @@ Un constructeur avec tout les arguments.
 @Data
 @Entity
 public class User {
+    @Id
     private String username;
     //Empêche la création d'un getter du mot de passe par Lombok
     @Getter(AccessLevel.NONE)
