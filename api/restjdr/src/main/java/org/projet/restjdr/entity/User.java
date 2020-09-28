@@ -12,15 +12,11 @@ import javax.persistence.Id;
  * Contient un nom d'utilisateur, un mot de passe ansi
  * qu'un boolean indiquant si l'utilisateur est administrateur.
  */
-/*@Data permet a Lombok de générer des getter, setter, toString
-Un constructeur avec tout les arguments.
-*/
 @Data
 @Entity
 public class User {
     @Id
     private String username;
-    //Empêche la création d'un getter du mot de passe par Lombok
     @Getter(AccessLevel.NONE)
     private String password;
     private boolean admin;
