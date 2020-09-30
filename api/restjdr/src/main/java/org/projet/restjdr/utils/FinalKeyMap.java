@@ -1,14 +1,20 @@
 package org.projet.restjdr.utils;
 
-import java.util.Arrays;
 import java.util.HashMap;
+import java.util.Map;
 
+/**
+ *Classe étendue de HashMap empêchant une modification des clés, en revanche,
+ * les valeurs peuvent être modifiée.
+ * @param <K> Type des clés
+ * @param <V> Type des valeurs
+ */
 public class FinalKeyMap<K, V> extends HashMap<K, V> {
     public FinalKeyMap (HashMap<K, V> m)
     {
         super(m);
     }
-
+    //Ici on autorise seulement de put si la clé existe déjà
     @Override
     public V put(K key, V value) {
         if (this.containsKey(key))
@@ -16,7 +22,7 @@ public class FinalKeyMap<K, V> extends HashMap<K, V> {
         else
             return null;
     }
-
+    //Ici on empêche la suppression de valeur.
     @Override
     public boolean remove(Object key, Object value){ return false;}
 
