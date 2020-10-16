@@ -8,9 +8,7 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 
 /**
- * Classe pour la gestion d'un utilisateur
- * Contient un nom d'utilisateur, un mot de passe ansi
- * qu'un boolean indiquant si l'utilisateur est administrateur.
+ * Ce DTO représente un utilisateur.
  */
 @Data
 @Entity

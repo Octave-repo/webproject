@@ -9,8 +9,8 @@ import java.util.Map;
  * @param <K> Type des clés
  * @param <V> Type des valeurs
  */
-public class FinalKeyMap<K, V> extends HashMap<K, V> {
-    public FinalKeyMap (HashMap<K, V> m)
+public class ImmutableKeyMap<K, V> extends HashMap<K, V> {
+    public ImmutableKeyMap(HashMap<K, V> m)
     {
         super(m);
     }

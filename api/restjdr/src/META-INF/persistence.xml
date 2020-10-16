@@ -5,7 +5,7 @@
              xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
     <persistence-unit name="EmployeeService"
     transaction-type="RESOURCE_LOCAL">
-    <class>org.projet.restjdr</class>
+    <class>org.projet.restjdr.entity.*</class>
         <properties>
             <propertyname="javax.persistence.jdbc.driver"value="org.hsqldb.jdbcDriver"/>
             <propertyname="javax.persistence.jdbc.url"value="jdbc:hsqldb:hsql://localhost/;create=true"/>
