@@ -18,7 +18,5 @@ public class Type {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private int idType;
     private String nom;
-    //Vérifier comment ça rend avec le JSON !!
-    //TODO
     private Set<String> template;
 }
