@@ -10,9 +10,12 @@ import javax.persistence.*;
  * Ce DTO représente une campagne.
  */
 public class Campaign {
-    @Id @GeneratedValue(strategy = GenerationType.AUTO)
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private int id;
     private int limite;
-    private int type;
-    private String mj;
+    @ManyToOne(targetEntity = Type.class, cascade = CascadeType.MERGE)
+    private Type type;
+    @ManyToOne(targetEntity = User.class, cascade = CascadeType.MERGE)
+    private User mj;
 }

@@ -1,4 +1,4 @@
-package org.projet.restjdr.misc;
+package org.projet.restjdr;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

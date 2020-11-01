@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<html>
+	<head>
+	<link rel="stylesheet" media="screen" type="text/css" href="color.css"/>
+	</head>
+    <body>
+		<div id=test1>
+			<form id="logForm" action="" method="GET">
+				<div class="user">
+					<label for="username">Nom d'utilisateur : </label>
+					<input id = "username" type ="text" name = "username">
+				</div>
+				<div class="user">
+					<label for="pass">Mot de passe : </label>
+					<input id = "pass" type ="password" name ="password">
+				</div>
+				<div>
+					<input type="button" id="logButton" class="bouton" value="Se connecter">
+				</div>
+				
+			</form>
+			<p id="alertUser"></p>
+			<p id=si> <a href = "singin.html">S'inscrire </a></p>
+		</div>
+    </body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"> </script>
+
+    <script src= "login.js"> </script>
+</html>

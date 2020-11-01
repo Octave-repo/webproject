@@ -1,21 +1,24 @@
 package org.projet.restjdr.entity;
 
-import lombok.AccessLevel;
 import lombok.Data;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
+import javax.persistence.*;
+import java.util.Collection;
 
 /**
  * Ce DTO représente un utilisateur.
  */
-@Data
 @Entity
+//@Data
+@NoArgsConstructor
+@Setter
+@Getter
 public class User {
     @Id
     private String username;
-    @Getter(AccessLevel.NONE)
     private String password;
     private boolean admin;
 
